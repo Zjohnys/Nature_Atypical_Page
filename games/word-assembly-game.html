@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montagem de Palavras - Nature Atypical</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <style>
+    .word-assembly-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 24px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .word-assembly-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #388e3c;
+    }
+    .word-assembly-hint {
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      color: #444;
+    }
+    .word-assembly-slots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .word-slot {
+      width: 38px;
+      height: 48px;
+      border-bottom: 3px solid #388e3c;
+      font-size: 2rem;
+      color: #222;
+      text-align: center;
+      line-height: 48px;
+      background: #e8f5e9;
+      border-radius: 6px 6px 0 0;
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .word-assembly-letters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .letter-btn {
+      width: 38px;
+      height: 48px;
+      font-size: 2rem;
+      background: #c8e6c9;
+      color: #222;
+      border: 2px solid #388e3c;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      margin-bottom: 6px;
+      user-select: none;
+    }
+    .letter-btn:active {
+      background: #388e3c;
+      color: #fff;
+    }
+    .word-assembly-feedback {
+      font-size: 1.1rem;
+      font-weight: 600;
+      min-height: 28px;
+      margin-bottom: 10px;
+    }
+    .word-assembly-next-btn {
+      background: #388e3c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(56,142,60,0.08);
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 10px;
+      display: none;
+    }
+    .word-assembly-next-btn:hover {
+      background: #256029;
+    }
+    .word-assembly-back-btn {
+      background: #388e3c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(56,142,60,0.08);
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 24px;
+      display: inline-block;
+    }
+    .word-assembly-back-btn:hover {
+      background: #256029;
+    }
+  </style>
+</head>
+<body>
+  <div class="word-assembly-container">
+    <h1 class="word-assembly-title">Montagem de Palavras</h1>
+    <div class="word-assembly-hint" id="wordHint"></div>
+    <div class="word-assembly-slots" id="wordSlots"></div>
+    <div class="word-assembly-letters" id="wordLetters"></div>
+    <div class="word-assembly-feedback" id="wordFeedback"></div>
+    <button class="word-assembly-next-btn" id="wordNextBtn">Próxima</button>
+    <button onclick="window.location.href='../index.html'" class="btn btn-secondary word-assembly-back-btn">Voltar ao Início</button>
+  </div>
+  <script src="../src/js/word-assembly-game.js"></script>
+</body>
+</html> 

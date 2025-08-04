@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Associação - Nature Atypical</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <style>
+    .association-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 24px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .association-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #388e3c;
+    }
+    .association-img {
+      width: 260px;
+      height: 150px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 18px;
+      border: 2px solid #4CAF50;
+      background: #fff;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(56,142,60,0.08);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .association-options {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .association-option {
+      background: #e8f5e9;
+      color: #333;
+      border: 2px solid #388e3c;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .association-option:hover {
+      background: #388e3c;
+      color: #fff;
+    }
+    .association-feedback {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      min-height: 28px;
+    }
+    .association-next-btn {
+      background: #388e3c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(56,142,60,0.08);
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 10px;
+      display: none;
+    }
+    .association-next-btn:hover {
+      background: #256029;
+    }
+    .association-back-btn {
+      background: #388e3c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(56,142,60,0.08);
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 24px;
+      display: inline-block;
+    }
+    .association-back-btn:hover {
+      background: #256029;
+    }
+  </style>
+</head>
+<body>
+  <div class="association-container">
+    <h1 class="association-title">Jogo de Associação</h1>
+    <img id="associationImg" class="association-img" src="" alt="Imagem para associar">
+    <div class="association-options" id="associationOptions"></div>
+    <div class="association-feedback" id="associationFeedback"></div>
+    <button class="association-next-btn" id="associationNextBtn">Próxima</button>
+    <button onclick="window.location.href='../index.html'" class="btn btn-secondary association-back-btn">Voltar ao Início</button>
+  </div>
+  <script src="../src/js/association-game.js"></script>
+</body>
+</html> 

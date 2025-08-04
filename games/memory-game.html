@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória - Nature Atypical</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <style>
+    .memory-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 32px 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      min-height: 500px;
+    }
+    .memory-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #388e3c;
+    }
+    .memory-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 110px);
+      gap: 22px;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    @media (max-width: 900px) {
+      .memory-grid {
+        grid-template-columns: repeat(4, 110px);
+      }
+    }
+    @media (max-width: 600px) {
+      .memory-grid {
+        grid-template-columns: repeat(2, 110px);
+        gap: 14px;
+      }
+      .memory-card {
+        width: 90px;
+        height: 90px;
+      }
+      .memory-card img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .memory-card {
+      width: 110px;
+      height: 110px;
+      background: #e8f5e9;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.2s;
+      user-select: none;
+    }
+    .memory-card img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      display: none;
+    }
+    .memory-card.flipped img,
+    .memory-card.matched img {
+      display: block;
+    }
+    .memory-card.flipped,
+    .memory-card.matched {
+      background: #c8e6c9;
+      cursor: default;
+    }
+    .memory-back-btn {
+      background: #388e3c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(56,142,60,0.08);
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 24px;
+      display: inline-block;
+    }
+    .memory-back-btn:hover {
+      background: #256029;
+    }
+  </style>
+</head>
+<body>
+  <div class="memory-container">
+    <h1 class="memory-title">Jogo da Memória</h1>
+    <div class="memory-grid" id="memoryGrid"></div>
+    <button onclick="window.location.href='../index.html'" class="btn btn-secondary memory-back-btn" style="margin-top:24px;">Voltar ao Início</button>
+  </div>
+  <script src="../src/js/memory-game.js"></script>
+</body>
+</html> 

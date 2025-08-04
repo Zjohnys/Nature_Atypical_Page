@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Atypical - Educação Ambiental Inclusiva</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <i class="fas fa-leaf"></i>
+        <span>Nature Atypical</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#inicio" class="nav-link">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#jogos" class="nav-link">Jogos</a></li>
+        <li><a href="#inclusao" class="nav-link">Inclusão</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="highlight">Nature Atypical</span>
+          <br>Educação Ambiental Inclusiva
+        </h1>
+        <p class="hero-subtitle">
+          Promovendo a conscientização ambiental de forma adaptada e inclusiva para todos os alunos
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="scrollToSection('sobre')">
+            <i class="fas fa-info-circle"></i>
+            Saiba Mais
+          </button>
+          <button class="btn btn-secondary" onclick="scrollToSection('jogos')">
+            <i class="fas fa-gamepad"></i>
+            Explorar Jogos
+          </button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="floating-card">
+          <i class="fas fa-puzzle-piece"></i>
+          <h3>Jogos Interativos</h3>
+          <p>Aprenda brincando</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sobre o Projeto</h2>
+          <p class="section-subtitle">Conheça nossa missão e objetivos</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Educação Ambiental</h3>
+            <p>Promovemos a conscientização sobre questões ambientais e preservação do meio ambiente no município de Altaneira.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Alunos Participativos</h3>
+            <div class="alunos-fotos">
+              <img src="img/Alunos.jpg" alt="Grupo de Alunos" class="aluno-foto">
+              <div class="alunos-nomes">
+                <span class="aluno-nome">Álvaro Almeida Bernardo</span>
+                <span class="aluno-nome">Paloma Lima Almeida</span>
+                <span class="aluno-nome">Petrus Emanuel Teles de Oliveira</span>
+              </div>
+            </div>
+            <p>Participação ativa dos alunos no desenvolvimento e utilização do aplicativo, criando uma experiência colaborativa.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Inclusão Social</h3>
+            <p>Formamos cidadãos críticos e participativos com conhecimento ambiental integral, adaptado para crianças atípicas.</p>
+          </div>
+        </div>
+
+        <div class="objective-card">
+          <h3>Nosso Objetivo</h3>
+          <p>
+            Promover a Educação Ambiental na EMEFTI 18 de dezembro de forma inclusiva, 
+            trabalhando a conscientização e compreensão sobre as questões ambientais e 
+            preservação do meio ambiente no município de Altaneira, conscientizando os 
+            alunos da sala de educação inclusiva. Formando assim, cidadãos críticos, 
+            participativos com conhecimento ambiental íntegro e provocando os valores 
+            essenciais para uma sociedade segura para todos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section games-section" id="jogos">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">🎮 Jogos Interativos</h2>
+          <p class="section-subtitle">Aprenda de forma divertida e inclusiva através de jogos educativos</p>
+        </div>
+        
+        <div class="games-intro">
+          <p>Explore nossos jogos desenvolvidos especialmente para promover o aprendizado de forma lúdica e inclusiva. Cada jogo foi pensado para desenvolver diferentes habilidades cognitivas.</p>
+        </div>
+        
+        <div class="games-categories">
+          <div class="games-category">
+            <h3 class="category-title">
+              <i class="fas fa-lightbulb"></i>
+              Jogos de Raciocínio
+            </h3>
+            <div class="games-grid">
+                            <div class="game-card featured" onclick="showGameDetails('sequencia')">
+                <div class="game-badge">⭐ Destaque</div>
+                <div class="game-icon">
+                  <i class="fas fa-list-ol"></i>
+                </div>
+                <h3>Sequência de Animais</h3>
+                <p class="game-description">Memorize a sequência visual e escolha a correta sem dicas</p>
+                <div class="game-features">
+                  <span class="feature-tag">Sequência</span>
+                  <span class="feature-tag">Lógica</span>
+                  <span class="feature-tag">Memória</span>
+                  <span class="feature-tag">Categorias</span>
+                </div>
+                <a href="games/animal-sequence-game.html" class="btn btn-primary game-btn">
+                  <i class="fas fa-play"></i>
+                  Jogar Agora
+                </a>
+              </div>
+              
+              <div class="game-card" onclick="showGameDetails('associacao')">
+                <div class="game-icon">
+                  <i class="fas fa-link"></i>
+                </div>
+                <h3>Associação</h3>
+                <p class="game-description">Associe imagens com os nomes dos locais</p>
+                <div class="game-features">
+                  <span class="feature-tag">Reconhecimento</span>
+                  <span class="feature-tag">Memória</span>
+                </div>
+                <a href="games/association-game.html" class="btn btn-outline game-btn">
+                  <i class="fas fa-play"></i>
+                  Jogar
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="games-category">
+            <h3 class="category-title">
+              <i class="fas fa-brain"></i>
+              Jogos de Memória
+            </h3>
+            <div class="games-grid">
+              <div class="game-card" onclick="showGameDetails('memoria')">
+                <div class="game-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <h3>Jogo da Memória</h3>
+                <p class="game-description">Encontre os pares de cartas iguais</p>
+                <div class="game-features">
+                  <span class="feature-tag">Concentração</span>
+                  <span class="feature-tag">Memória Visual</span>
+                </div>
+                <a href="games/memory-game.html" class="btn btn-outline game-btn">
+                  <i class="fas fa-play"></i>
+                  Jogar
+                </a>
+              </div>
+              
+              <div class="game-card" onclick="showGameDetails('montagem')">
+                <div class="game-icon">
+                  <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <h3>Montagem de Palavras</h3>
+                <p class="game-description">Arraste letras para formar palavras</p>
+                <div class="game-features">
+                  <span class="feature-tag">Vocabulário</span>
+                  <span class="feature-tag">Raciocínio</span>
+                </div>
+                <a href="games/word-assembly-game.html" class="btn btn-outline game-btn">
+                  <i class="fas fa-play"></i>
+                  Jogar
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="games-footer">
+          <div class="games-stats">
+            <div class="stat-item">
+              <i class="fas fa-gamepad"></i>
+              <span>4 Jogos Disponíveis</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <span>100% Inclusivo</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Educativo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section inclusion-section" id="inclusao">
+      <div class="container">
+        <div class="inclusion-content">
+          <div class="inclusion-text">
+            <h2>Mensagem de Inclusão</h2>
+            <blockquote>
+              "Educar é incluir. Todos têm o direito de aprender e participar!"
+            </blockquote>
+            <p>
+              Acreditamos que cada criança é única e merece uma educação adaptada às suas necessidades. 
+              Nosso aplicativo foi desenvolvido pensando na inclusão e na acessibilidade, garantindo 
+              que todos os alunos possam participar e aprender de forma significativa.
+            </p>
+          </div>
+          <div class="inclusion-image">
+            <div class="inclusion-symbol">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <i class="fas fa-leaf"></i>
+          <span>Nature Atypical</span>
+        </div>
+        <p class="footer-text">
+          &copy; 2025 Projeto de Inclusão | Desenvolvido por alunos do 18 de Dezembro
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+558892031365" class="social-link"><i class="fas fa-phone"></i></a>
+          <a href="https://www.google.com/maps/place/Escola+Municipal+de+Ensino+Fundamental+18+de+Dezembro/@-6.9958756,-39.7372639,21z/data=!4m14!1m7!3m6!1s0x7a21bccc0212833:0xfcf4d693ce559d9!2s2737%2BJ4+-+Altaneira,+CE,+63195-000!3b1!8m2!3d-6.9959375!4d-39.7371875!3m5!1s0x7a21bd718a612cf:0x6dd20c19e622c7c0!8m2!3d-6.9959318!4d-39.7371505!16s%2Fg%2F1yfjd_wt9?entry=ttu&g_ep=EgoyMDI1MDcxMy4wIKXMDSoASAFQAw%3D%3D" class="social-link" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal para detalhes dos jogos -->
+  <div id="gameModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
